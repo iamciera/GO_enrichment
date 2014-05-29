@@ -1,0 +1,6 @@
+"V1"
+"NA" NA
+"GO:0003700" "sequence-specific DNA binding transcription factor activity"
+"GO:0005667" "transcription factor complex"
+"GO:0006355" "regulation of transcription, DNA-templated"
+"GO:0009554" "megasporogenesis"

@@ -1,0 +1,60 @@
+GO Enrichment
+-------------
+
+```{r}
+library(goseq)
+library(GO.db)
+```
+
+###File Input
+
+This is the input of your go file, which needs to be properly formated. Need to incorporate into this scipt the proper formatting. 
+
+```{r}
+pat <- matrixGO#read.table("matrixGO.txt",header=TRUE)  #THESE ARE FUCKING IDENTICAL!!!!
+str(pat)
+str(matrixGO)
+head(pat)
+
+```
+
+The is the input of the GOslim categories.  There are only two columns 1. itag and 2. go
+
+```{r}
+cate <- read.table("melted.GOSlim.txt",header=TRUE) 
+head(cate)
+```
+
+###Subseting for GO analysis
+
+Specify the column you are interested in `pat$all` refers to all the DE gene regardless if they are up or down regulated. If you want to specify down regulated, specify `pat$down`.
+
+```{r}
+genes = as.integer(pat$all)
+names(genes) = pat$itag
+table(genes)
+length(genes)
+
+pwf = nullp(genes,bias.data=pat$length)
+
+
+GO.wall = goseq(pwf,gene2cat = cate)
+head(GO.wall)
+```
+
+Here is where you can specify the p-value cut-off
+
+```{r}
+enriched.GO = GO.wall$category[p.adjust(GO.wall$over_represented_pvalue, method = "BH") < 0.05]
+
+enriched.GO
+
+my.GO <- as.character(enriched.GO)
+my.GO.table <- Term(my.GO)
+my.GO.table
+t <- as.matrix(my.GO.table)
+```
+
+write.table(t, file="tf2cmbr_wtcmbr_DE1_sigonly_ALL_GOmerge.txt")
+
+
