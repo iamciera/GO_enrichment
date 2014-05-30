@@ -1,3 +1,0 @@
-"V1"
-"GO:0003700" "sequence-specific DNA binding transcription factor activity"
-"NA" NA
