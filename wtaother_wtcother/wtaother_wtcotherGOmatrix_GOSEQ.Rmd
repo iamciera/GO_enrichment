@@ -6,8 +6,6 @@ The only things you have to change in this file are:
 2. `genes = as.integer(pat$up)` Change this where you specify upregulated, down regulated, or all.
 3. `write.table(t, file="DE1_sigonly_up_GOmerge.txt")` This is where you specify the output file name.  Change each time you change the second item.
 
-GO Enrichment
--------------
 
 ```{r}
 library(goseq)
@@ -21,7 +19,7 @@ Making the table
 Input the output from DE analysis.  This is made for a list that includes only the significant genes.  
 
 ```{r}
-sigOnly <- read.csv("wtambr_aother_DE.csv")
+sigOnly <- read.csv("wtaother_wtcother_DE.csv") #change this
 head(sigOnly)
 dim(sigOnly)
 colnames(sigOnly)[1] <- "itag" 
@@ -117,17 +115,12 @@ Here is where you can specify the p-value cut-off
 
 ```{r}
 enriched.GO = GO.wall$category[p.adjust(GO.wall$over_represented_pvalue, method = "BH") < 0.05]
-
-enriched.GO
-
 my.GO <- as.character(enriched.GO)
 my.GO.table <- Term(my.GO)
 my.GO.table
 t <- as.matrix(my.GO.table)
 ```
 
-
-
-write.table(t, file="DE1_wtambr_wtaother_sigonly_all_GOmerge.txt") #change this
-
+write.table(t, file="DE1_sigonly_wtaother_wtcother_all_GOmerge.txt") #change this
+ 
 

@@ -1,0 +1,3 @@
+"V1"
+"GO:0008061" "chitin binding"
+"GO:0008843" "endochitinase activity"

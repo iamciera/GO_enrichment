@@ -1,0 +1,5 @@
+"V1"
+"GO:0030077" "plasma membrane light-harvesting complex"
+"GO:0016020" "membrane"
+"GO:0009772" "photosynthetic electron transport in photosystem II"
+"GO:0016021" "integral component of membrane"

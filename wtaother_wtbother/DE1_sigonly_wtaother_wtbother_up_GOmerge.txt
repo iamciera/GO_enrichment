@@ -1,0 +1,6 @@
+"V1"
+"GO:0008061" "chitin binding"
+"GO:0008843" "endochitinase activity"
+"GO:0019310" "inositol catabolic process"
+"GO:0050113" "inositol oxygenase activity"
+"GO:0043086" "negative regulation of catalytic activity"

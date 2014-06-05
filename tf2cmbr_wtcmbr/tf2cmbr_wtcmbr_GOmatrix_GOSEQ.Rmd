@@ -53,9 +53,10 @@ downITAGmerge <- merge(genes, downITAG, by = "itag", all= TRUE)
 dim(downITAGmerge)
 allITAGmerge <- merge(genes, allITAG, by = "itag", all= TRUE)
 dim(allITAGmerge)
+head(allITAGmerge)
 ```
 
-head(allITAGmerge)
+
 
 ###Merge II - Merge them all together.
 
@@ -77,7 +78,7 @@ head(matrixGO)
 This is if you want to write out the table. 
 write.table(matrixGO, "mydata.txt", sep="\t", quote= FALSE)
 
-Ashishes section
+Aashish's section
 -----------------
 
 The is the input of the GOslim categories.  There are only two columns 1. itag and 2. go
@@ -94,7 +95,7 @@ head(cate)
 Specify the column you are interested in `pat$all` refers to all the DE gene regardless if they are up or down regulated. If you want to specify down regulated, specify `pat$down`.
 
 ```{r}
-genes = as.integer(pat$all)
+genes = as.integer(pat$down)
 names(genes) = pat$itag
 table(genes)
 length(genes)
@@ -118,7 +119,7 @@ my.GO.table
 t <- as.matrix(my.GO.table)
 ```
 
-?seq()
 
-write.table(t, file="tf2cmbr_wtcmbr_DE1_sigonly_ALL_GOmerge.txt")
+
+write.table(t, file="tf2cmbr_wtcmbr_DE1_sigonly_down_GOmerge.txt")
 
