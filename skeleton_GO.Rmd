@@ -1,6 +1,18 @@
 GO Enrichment
 -------------
 
+###Read in YAML guide
+
+```{r}
+library(yaml)
+yamls <- yaml.load_file("de.yml")
+sample1 <- yamls$sample1
+sample2 <- yamls$sample2
+
+sample1
+sample2
+```
+
 ```{r}
 library(goseq)
 library(GO.db)
@@ -11,9 +23,10 @@ Setting up the DE table for GO analysis
 
 ###File Input
 Input the output from DE analysis.  This is made for a list that includes only the significant genes.  
+?paste
 
 ```{r}
-sigOnly <- read.table("tf2cmbr_wtcmbr_DE_sig.txt", header = TRUE, fill = TRUE)
+sigOnly <- read.table(paste(sample1,"_",sample2,"_DE_sig.txt", sep=""), header = TRUE, fill = TRUE)
 head(sigOnly)
 dim(sigOnly)
 colnames(sigOnly)
@@ -127,7 +140,5 @@ my.GO.table
 t <- as.matrix(my.GO.table)
 ```
 
-
-
-write.table(t, file="tf2cmbr_wtcmbr_DE1_sigonly_down_GOmerge.txt")
+write.table(t, file=paste(sample1,"_",sample2,"DE1_sigonly_down_GO.txt", sep=""))
 
