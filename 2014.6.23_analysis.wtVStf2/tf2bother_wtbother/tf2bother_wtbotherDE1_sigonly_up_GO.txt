@@ -1,0 +1,2 @@
+"V1"
+"GO:0010466" "negative regulation of peptidase activity"

@@ -1,0 +1,15 @@
+"V1"
+"GO:0015074" "DNA integration"
+"NA" NA
+"GO:0003700" "sequence-specific DNA binding transcription factor activity"
+"GO:0005667" "transcription factor complex"
+"GO:0005985" "sucrose metabolic process"
+"GO:0003964" "RNA-directed DNA polymerase activity"
+"GO:0006278" "RNA-dependent DNA replication"
+"GO:0005982" "starch metabolic process"
+"GO:0043565" "sequence-specific DNA binding"
+"NA" NA
+"GO:0006949" "syncytium formation"
+"GO:0006355" "regulation of transcription, DNA-templated"
+"GO:0008810" "cellulase activity"
+"GO:0043086" "negative regulation of catalytic activity"

@@ -1,0 +1,7 @@
+"V1"
+"GO:0009813" "flavonoid biosynthetic process"
+"GO:0003700" "sequence-specific DNA binding transcription factor activity"
+"NA" NA
+"GO:0003964" "RNA-directed DNA polymerase activity"
+"GO:0006278" "RNA-dependent DNA replication"
+"GO:0005667" "transcription factor complex"

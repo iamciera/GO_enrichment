@@ -1,0 +1,5 @@
+"V1"
+"GO:0003964" "RNA-directed DNA polymerase activity"
+"GO:0006278" "RNA-dependent DNA replication"
+"GO:0015074" "DNA integration"
+"NA" NA

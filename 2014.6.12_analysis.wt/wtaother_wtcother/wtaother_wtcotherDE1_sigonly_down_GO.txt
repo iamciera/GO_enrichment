@@ -1,0 +1,4 @@
+"V1"
+"GO:0008235" "metalloexopeptidase activity"
+"GO:0004177" "aminopeptidase activity"
+"GO:0030145" "manganese ion binding"

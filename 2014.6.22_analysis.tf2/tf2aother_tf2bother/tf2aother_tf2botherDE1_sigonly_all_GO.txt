@@ -1,0 +1,4 @@
+"V1"
+"NA" NA
+"GO:0003700" "sequence-specific DNA binding transcription factor activity"
+"GO:0042807" "central vacuole"

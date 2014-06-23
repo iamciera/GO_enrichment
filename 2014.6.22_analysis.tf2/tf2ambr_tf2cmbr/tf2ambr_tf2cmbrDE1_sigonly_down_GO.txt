@@ -1,0 +1,6 @@
+"V1"
+"GO:0009813" "flavonoid biosynthetic process"
+"GO:0003964" "RNA-directed DNA polymerase activity"
+"GO:0006278" "RNA-dependent DNA replication"
+"GO:0015074" "DNA integration"
+"GO:0051749" "indole acetic acid carboxyl methyltransferase activity"

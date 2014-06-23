@@ -1,7 +1,0 @@
-"V1"
-"GO:0015074" "DNA integration"
-"GO:0019310" "inositol catabolic process"
-"GO:0050113" "inositol oxygenase activity"
-"GO:0010067" "procambium histogenesis"
-"GO:0008843" "endochitinase activity"
-"GO:0008061" "chitin binding"

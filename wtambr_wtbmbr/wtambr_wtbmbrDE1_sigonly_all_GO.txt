@@ -1,3 +1,0 @@
-"V1"
-"GO:0010466" "negative regulation of peptidase activity"
-"GO:0004867" "serine-type endopeptidase inhibitor activity"

@@ -1,0 +1,6 @@
+"V1"
+"GO:0003964" "RNA-directed DNA polymerase activity"
+"GO:0006278" "RNA-dependent DNA replication"
+"GO:0015074" "DNA integration"
+"GO:0043229" "intracellular organelle"
+"GO:0006259" "DNA metabolic process"
